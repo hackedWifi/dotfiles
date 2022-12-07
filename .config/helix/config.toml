@@ -1,0 +1,13 @@
+theme = 'catppuccin_mocha'
+[editor]
+color-modes = true 
+
+[keys.insert]
+j = { j = "normal_mode" }
+
+[editor.cursor-shape]
+insert = "bar"
+
+[editor.statusline]
+# Allows configuration of the status bar at the bottom of the editor.
+separator = "|"
