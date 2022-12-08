@@ -1,0 +1,13 @@
+color=#1e1e2e
+indicator-radius=150
+indicator-thickness=20
+inside-color=#1e1e2e
+inside-wrong-color=#f38ba8
+key-hl-color=#1e1e2e
+line-color=#cdd6f4
+line-ver-color=#cdd6f4
+#line-uses-inside
+#line-wrong-color
+ring-wrong-color=#f5c2e7
+ring-color=#cba6f7
+separator-color=#cdd6f4
