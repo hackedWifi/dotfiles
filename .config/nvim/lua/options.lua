@@ -24,6 +24,7 @@ vim.opt.winminheight = 0                        -- wmh:   allow showing windows 
 vim.opt.mouse = ''                              -- Enable the use of a mouse.
 vim.opt.wrap = false                            -- soft-wrapping is off by default.
 vim.opt.shada = [['0,:0,/0,h]]                  -- shada file parameters, see :h 'shada'.
+vim.opt.textwidth=80                            -- Maximum width of text that is being inserted
 -- }}}
 
 -- Folding {{{

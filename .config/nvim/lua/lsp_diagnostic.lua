@@ -55,17 +55,20 @@ vim.api.nvim_create_autocmd("CursorHold", {
 })
 --]]
 
-vim.fn.sign_define("DiagnosticSignError", {text="", texthl="DiagnosticSignError", linehl="", numhl="DiagnosticLineNrError"}
-)
-vim.fn.sign_define(
+local signs = { Error = " ", Warn =" ", Hint = "", Info = " " }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
+--[[ vim.fn.sign_define(
     "DiagnosticSignWarning",
-    {texthl = "DiagnosticSignWarning", text = "", numhl = "DiagnosticSignWarning"}
+    {texthl = "DiagnosticSignWarning", text = "", numhl = "DiagnosticSignWarning"}
 )
 vim.fn.sign_define(
     "DiagnosticSignHint",
-    {texthl = "DiagnosticSignHint", text = "", numhl = "DiagnosticSignHint"}
+    {texthl = "DiagnosticSignHint", text = "", numhl = "DiagnosticSignHint"}
 )
 vim.fn.sign_define(
     "DiagnosticSignInformation",
-    {texthl = "DiagnosticSignInformation", text = "", numhl = "DiagnosticSignInformation"}
-)
+    {texthl = "DiagnosticSignInformation", text = "", numhl = "DiagnosticSignInformation"}
+) ]]

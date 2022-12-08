@@ -25,6 +25,6 @@ require "paq" {		            	      -- load the package manager installed in
 -- run=function() require("toggleterm").setup{} end};  
 
 "b3nj5m1n/kommentary";			      -- Comment text in and out
--- "m4xshen/autoclose.nvim";                      -- Minimal autoclose
+--"m4xshen/autoclose.nvim";                      -- Minimal autoclose
 
 }
